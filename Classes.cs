@@ -19,8 +19,6 @@ namespace Lesson20
             this._Radius = Radius;
         }
 
-
-
         public float CalculateArea()
         {
             return Circle. _PI * this._Radius * this._Radius;
