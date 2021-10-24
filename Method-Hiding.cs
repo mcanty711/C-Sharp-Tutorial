@@ -33,7 +33,7 @@ namespace Method-Hiding
             FullTimeEmployee FTE = new FullTimeEmployee();
             FTE.FirstName = "Marcus";
             FTE.LastName = "Canty";
-            FTE.PrintFullName();
+            FTE.PrintFullName(); 
 
             Employee PTE = new PartTimeEmployee();
             PTE.FirstName = "Marcus";
