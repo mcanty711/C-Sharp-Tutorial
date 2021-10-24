@@ -43,4 +43,32 @@ namespace Inheritance
             PTE.PrintFullName();
         }
     }
+    //This code proves that you can 
+    public class ParentClass
+    {
+        public ParentClass()
+        {
+            Console.WriteLine("ParentClass Constructor called");
+        }
+        public ParentClass(string Message)
+        {
+            Console.WriteLine(Message);
+        }
+    }
+
+    public class ChildClass : ParentClass
+    {
+        public ChildClass() : base("Derived class controlling Parent class")
+        {
+            Console.WriteLine("ChildClass Constructor called");
+        }
+    }
+
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            ChildClass CC = new ChildClass();
+        }
+    }
 }
