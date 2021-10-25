@@ -49,7 +49,7 @@ namespace Lesson23
 
             foreach(Employee e in employees)
             {
-                e.PrintFullName();
+                e.PrintFullName(); 
             }
         }
     }
