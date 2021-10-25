@@ -36,7 +36,7 @@ namespace Lesson24
             B2.Print();
 
             BaseClass B3 = new DerivedClass2(); //Method Overriding 
-            B3.Print();
+            B3.Print(); 
         }
     }
 }
