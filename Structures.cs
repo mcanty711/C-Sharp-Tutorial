@@ -8,7 +8,8 @@ namespace Lesson28
         private int _id;
         private string _name;
 
-        public int ID {
+        public int ID 
+        {
             get { return this._id; }
             set { this._id = value; } 
         }
