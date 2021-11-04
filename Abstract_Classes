@@ -1,0 +1,28 @@
+using System;
+
+namespace AbstractClasses
+{
+    public abstract class Customer
+    {
+        public abstract void Print();
+
+        public void Print2()
+        {
+            Console.WriteLine("Print2");
+        }
+    }
+    
+    public class Program : Customer
+    {     
+        public override void Print()
+        {
+            Console.WriteLine("Print Method");
+        }
+        
+        public static void Main(string[] args)
+        {
+            Customer C = new Program();
+            C.Print();
+        }
+    }
+}
