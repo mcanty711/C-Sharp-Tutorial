@@ -1,0 +1,26 @@
+using System;
+
+namespace AbstractClasses_vs_Interfaces
+{
+    public abstract class Customer
+    {
+        int ID;
+        public void Print()
+        {
+            Console.WriteLine("Print");
+        }
+    } 
+    
+    public interface ICustomer
+    {
+        void Print();  
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+        }
+    }
+}
