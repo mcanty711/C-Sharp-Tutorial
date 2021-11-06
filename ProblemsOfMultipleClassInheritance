@@ -27,7 +27,7 @@ namespace ProblemsOfMultipleClassInheritance
         }
     }
 
-    class D : B, C //Compiler error - class D cannot have muliple inheritance
+    class D : B, C //Compiler error - class D cannot have muliple class inheritance
     {
 
     }
