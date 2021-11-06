@@ -1,6 +1,6 @@
 using System;
 
-namespace Lesson36_Delegates
+namespace Delegates
 {
     public delegate void HelloFunctionDelegate(string Message);
     
