@@ -40,4 +40,4 @@ namespace ProblemsOfMultipleClassInheritance
             d.Print();
         }
     }
-}
+} 
