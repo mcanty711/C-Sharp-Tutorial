@@ -1,6 +1,6 @@
 using System;
 
-namespace Lesson48_TypesVsTypeMembers
+namespace TypesVsTypeMembers
 {
     public class Customer
     {
