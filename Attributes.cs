@@ -13,7 +13,7 @@ namespace Attributes
 
     public class Calculator
     {
-        [Obsolete("Use Add(List<int> Numbers) Method")]
+        [Obsolete("Use Add(List<int> Numbers) Method", true)]
         public static int Add(int FirstNumber, int SecondNumber)
         {
             return FirstNumber + SecondNumber;
