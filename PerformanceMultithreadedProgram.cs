@@ -1,6 +1,8 @@
 using System;
+using System.Diagnostics;
+using System.Threading;
 
-namespace PerformanceMultithreadedProgram
+namespace Lesson97_PerformanceMultithreadedProgram
 {
     class Program
     {
@@ -31,6 +33,24 @@ namespace PerformanceMultithreadedProgram
         static void Main(string[] args)
         {
             Console.WriteLine("Processor Count = " + Environment.ProcessorCount);
+            Stopwatch stopwatch = Stopwatch.StartNew();
+            EvenNumbersSum();
+            OddNumbersSum();
+            stopwatch.Stop();
+            Console.WriteLine("Total milliseconds without multiple threads = " + stopwatch.ElapsedMilliseconds);
+   
+            stopwatch = Stopwatch.StartNew();
+            Thread T1 = new Thread(EvenNumbersSum);
+            Thread T2 = new Thread(OddNumbersSum);
+
+            T1.Start();
+            T2.Start();
+
+            T1.Join();
+            T2.Join();
+
+            stopwatch.Stop();
+            Console.WriteLine("Total milliseconds with multiple threads = " + stopwatch.ElapsedMilliseconds);
         }
     }
 }
